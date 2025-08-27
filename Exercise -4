@@ -1,0 +1,30 @@
+package carpackage;
+
+class Car {
+	  
+    String model;
+    String color;
+    
+    Car(String model, String color) {
+        this.model = model;
+        this.color = color;
+    }
+    
+    void start() {
+        System.out.println(model + " (" + color + ") is starting...");
+    }
+    
+    void stop() {
+        System.out.println(model + " (" + color + ") has stopped.");
+    }
+}
+
+public class CarDemo {
+    public static void main(String[] args) {
+        
+                Car mycar = new Car("Honda Civic", "Blue");
+        
+        mycar.start();
+        mycar.stop();
+    }
+}
